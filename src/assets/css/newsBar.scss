@@ -1,0 +1,23 @@
+.news-bar {
+  width: 100%;
+  height: $new-bar-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color-gradient-blue;
+
+  p {
+    font-family: 'Roboto';
+    font-size: $font-size-18;
+    line-height: rem(27);
+    text-transform: uppercase;
+    color: $color-white;
+  }
+
+  @media screen and ($max-s) {
+    p {
+      font-size: $font-size-12;
+      line-height: rem(20);
+    }
+  }
+}

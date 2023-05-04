@@ -1,0 +1,17 @@
+{
+  "btn-build-now": "Build now",
+  "btn-stack-exchange": "Stack exchange",
+  "btn-learn-more": "Learn more",
+  "btn-view-all": "View all",
+  "btn-sign-up": "Sign up",
+  "btn-latest-episode": "Latest episode",
+
+  "label-chapter": "Chapters",
+  "label-found-by": "Managed by Solana Foundation",
+  "label-copyright": "@ 2023 Solana Foundation. All rights reserved.",
+
+  "menu-learn": "Learn",
+  "menu-build": "Build",
+  "menu-network": "Network",
+  "menu-community": "Community"
+}

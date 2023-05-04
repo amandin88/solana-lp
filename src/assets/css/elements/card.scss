@@ -1,0 +1,166 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: rem(18);
+  transition: all 0.25s ease-in-out;
+}
+
+.course {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  img {
+    width: rem(30);
+    height: rem(30);
+
+    @media (hover: hover) {
+      &:hover {
+        transform: translateY(-1px);
+      }
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  .chapters {
+    width: fit-content;
+    margin-bottom: rem(17);
+    padding: 0 rem(12);
+    border-radius: rem(16);
+    font-size: $font-size-11;
+    line-height: rem(18);
+    color: $color-white;
+    background-color: $color-purple;
+  }
+
+  &__small {
+    padding: 0 rem(18.5) rem(40) rem(31.5);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    aspect-ratio: 1/1;
+
+    .chapters {
+      margin-bottom: rem(12);
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        transform: translateY(-10px);
+      }
+    }
+  }
+
+  &__large {
+    position: relative;
+    height: rem(370);
+
+    .bg-overlay {
+      padding-left: rem(88);
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: $color-black-op-40;
+
+      @media (hover: hover) {
+        &:hover {
+          background-color: $color-black-op-20;
+        }
+      }
+    }
+
+    .card-course-desc {
+      margin: rem(32) 0 rem(25) 0;
+    }
+  }
+}
+
+.dig {
+  padding: rem(31) rem(31.5) rem(34) rem(31.5);
+  position: relative;
+  background-color: $color-black-4;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+
+  .category {
+    font-size: $font-size-12;
+    line-height: rem(19);
+    letter-spacing: rem(1.5);
+    color: $color-purple;
+    text-transform: uppercase;
+  }
+
+  .card-dig-desc {
+    margin: rem(14) 0 rem(48) 0;
+  }
+
+  .button {
+    font-family: 'Helvetica';
+  }
+
+  .eclipse {
+    width: rem(240);
+    height: rem(60);
+    position: absolute;
+    bottom: rem(-50);
+    left: rem(60);
+    background-color: $color-purple-light;
+    filter: blur(rem(40));
+  }
+
+  h5 {
+    margin-top: rem(8);
+  }
+}
+
+@media screen and ($max-l) {
+  .course {
+    &__large {
+      height: rem(300);
+
+      .bg-overlay {
+        padding-left: rem(64);
+      }
+    }
+
+    &__small {
+      @media (hover: hover) {
+        &:hover {
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and ($max-s) {
+  .course {
+    &__small {
+      aspect-ratio: 3/2;
+    }
+
+    &__large {
+      .bg-overlay {
+        padding-left: rem(24);
+      }
+    }
+
+    .chapters {
+      font-size: $font-size-14;
+    }
+  }
+
+  .dig {
+    aspect-ratio: 3/2;
+
+    .eclipse {
+      left: rem(100);
+    }
+  }
+}

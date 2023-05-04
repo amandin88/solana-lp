@@ -1,0 +1,53 @@
+.nav-bar {
+  width: 100%;
+  height: $nav-bar-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-black-op-60;
+  z-index: 2;
+
+  &-inner {
+    width: rem(calc(1140 - 48));
+    height: fit-content;
+    padding: 0 rem(24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      height: rem(28);
+      transition: all 0.3s ease;
+
+      @media (hover: hover) {
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+
+  @media screen and ($max-l) {
+    &-inner {
+      width: calc(100% - rem(48));
+      padding: 0 rem(24);
+    }
+  }
+
+  @media screen and ($max-s) {
+    height: calc($nav-bar-height * 0.75);
+
+    &-inner {
+      width: calc(100% - rem(24));
+      padding: 0 rem(12);
+
+      img {
+        height: rem(16);
+      }
+    }
+  }
+}

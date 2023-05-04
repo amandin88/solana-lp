@@ -1,0 +1,201 @@
+.footer {
+  width: inherit;
+  height: calc($footer-height - rem(162));
+  padding: rem(81) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-blue-dark;
+
+  &-container {
+    width: $section-width;
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+    .footer-content {
+      display: flex;
+    }
+
+    .social {
+      flex-direction: column;
+
+      .footer-logo {
+        width: rem(31);
+        height: rem(27);
+        margin-bottom: rem(20);
+      }
+
+      .footer-company {
+        font-size: $font-size-16;
+        line-height: rem(27);
+        color: $color-white;
+      }
+
+      .footer-social {
+        display: flex;
+        margin: rem(19.5) 0;
+
+        a {
+          width: rem(26);
+          height: rem(16);
+          margin-right: rem(10);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $color-grey-dark;
+
+          @media (hover: hover) {
+            &:hover {
+              background-color: $color-purple;
+              transform: translateY(-1px);
+            }
+          }
+
+          &:active {
+            transform: scale(0.98);
+          }
+        }
+      }
+
+      .footer-copyrights {
+        font-size: $font-size-16;
+        line-height: rem(27);
+        color: $color-grey-dark;
+      }
+    }
+
+    .links {
+      display: flex;
+
+      .column {
+        width: rem(160);
+        display: flex;
+        flex-direction: column;
+
+        h5 {
+          font-size: $font-size-16;
+          text-transform: uppercase;
+        }
+
+        a {
+          margin-top: rem(11);
+          font-size: $font-size-16;
+          line-height: rem(27);
+          text-decoration: none;
+          color: $color-grey-dark;
+
+          @media (hover: hover) {
+            &:hover {
+              font-weight: 700;
+              color: $color-white;
+            }
+          }
+        }
+      }
+
+      span {
+        height: rem(20);
+        margin-left: rem(34);
+        display: flex;
+        align-items: center;
+        font-size: $font-size-16;
+        line-height: rem(27);
+        color: $color-grey-dark;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:after {
+          content: '';
+          margin: 0 0 rem(4) rem(5);
+          padding: 4px;
+          display: inline-block;
+          border: solid $color-grey-dark;
+          border-width: 0 rem(2) rem(2) 0;
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+        }
+
+        @media (hover: hover) {
+          &:hover,
+          &:hover:after {
+            color: $color-white;
+            border-color: $color-white;
+          }
+        }
+
+        img {
+          width: rem(20);
+          height: rem(20);
+          margin-right: rem(4);
+        }
+      }
+    }
+  }
+
+  @media screen and ($max-l) {
+    padding: rem(50) 0;
+
+    &-container {
+      width: calc(100% - rem(48));
+      padding: 0 rem(24);
+    }
+  }
+
+  @media screen and ($max-m) {
+    height: fit-content;
+
+    &-container {
+      width: 100%;
+      padding-left: rem(72);
+      display: flex;
+      flex-direction: column-reverse;
+      row-gap: rem(48);
+
+      .links {
+        .column {
+          width: 30%;
+        }
+      }
+    }
+  }
+
+  @media screen and ($max-s) {
+    &-container {
+      padding-left: rem(24);
+
+      .social {
+        .footer-company,
+        .footer-copyrights {
+          font-size: $font-size-12;
+          line-height: rem(20);
+        }
+      }
+
+      .links {
+        .column {
+          width: 30%;
+
+          h5 {
+            font-size: $font-size-11;
+          }
+
+          a {
+            font-size: $font-size-12;
+            line-height: rem(20);
+          }
+        }
+
+        span {
+          font-size: $font-size-11;
+          line-height: rem(20);
+
+          img {
+            width: rem(14);
+            height: rem(14);
+            margin-right: rem(4);
+          }
+        }
+      }
+    }
+  }
+}

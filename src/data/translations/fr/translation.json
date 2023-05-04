@@ -1,0 +1,17 @@
+{
+  "btn-build-now": "Créer maintenant",
+  "btn-stack-exchange": "Echange Stack",
+  "btn-learn-more": "Apprendre plus",
+  "btn-view-all": "Tout voir",
+  "btn-sign-up": "S'enregistrer",
+  "btn-latest-episode": "Dernier épisode",
+
+  "label-chapter": "Chapitres",
+  "label-found-by": "Géré par la Fondation Solana",
+  "label-copyright": "@ 2023 Solana Foundation. Tous droits réservés.",
+
+  "menu-learn": "Apprendre",
+  "menu-build": "Créer",
+  "menu-network": "Réseau",
+  "menu-community": "Communauté"
+}

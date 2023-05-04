@@ -1,0 +1,60 @@
+.button {
+  width: fit-content;
+  height: fit-content;
+  padding: rem(10) rem(21);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-white;
+  border-radius: rem(24);
+  font-family: 'Roboto';
+  font-size: $font-size-15;
+  line-height: rem(20);
+  text-transform: uppercase;
+  color: $color-white;
+  cursor: pointer;
+  transition: all 0.1s ease;
+
+  img {
+    position: initial;
+    width: rem(16);
+    height: rem(20);
+    margin-left: rem(10);
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      font-weight: 700;
+      transform: translateY(-1px);
+      color: $color-purple-light;
+      border-color: $color-purple-light;
+    }
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.green {
+  font-weight: 700;
+  color: $color-black;
+  background-color: $color-green;
+}
+
+.small-icon {
+  img {
+    width: rem(12);
+    height: rem(12);
+    margin-left: rem(8);
+  }
+}
+
+.learn-more {
+  padding: 0;
+  justify-content: space-between;
+  border: none;
+  font-size: $font-size-11;
+  line-height: rem(27);
+  letter-spacing: rem(0.6);
+}

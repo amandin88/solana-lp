@@ -1,0 +1,71 @@
+h1 {
+  font-weight: 400;
+  font-size: $font-size-94;
+  line-height: rem(96);
+  letter-spacing: rem(0.48);
+  color: $color-white;
+  white-space: pre-line;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: $font-size-38;
+  line-height: rem(40);
+  color: $color-white;
+  white-space: pre-line;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: $font-size-36;
+  line-height: rem(42);
+  letter-spacing: rem(0.68);
+  color: $color-white;
+  white-space: pre-line;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: $font-size-32;
+  line-height: rem(33);
+  color: $color-white;
+  white-space: pre-line;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: $font-size-20;
+  line-height: rem(20);
+  color: $color-white;
+  white-space: pre-line;
+}
+
+@media screen and ($max-l) {
+  h1 {
+    font-size: $font-size-64;
+    line-height: rem(64);
+  }
+
+  h2 {
+    font-size: $font-size-32;
+  }
+
+  h3 {
+    font-size: $font-size-28;
+  }
+
+  h4 {
+    font-size: $font-size-20;
+  }
+
+  h5 {
+    font-size: $font-size-16;
+  }
+}
+
+@media screen and ($max-m) {
+  h1 {
+    font-size: $font-size-52;
+    line-height: rem(52);
+  }
+}
